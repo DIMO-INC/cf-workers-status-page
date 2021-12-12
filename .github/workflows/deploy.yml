@@ -47,6 +47,7 @@ jobs:
         environment: prod
       env:
         CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+        CF_ZONE_ID: ${{ secrets.CF_ZONE_ID }}
         SECRET_SLACK_WEBHOOK_URL: ${{secrets.SECRET_SLACK_WEBHOOK_URL}}
         SECRET_TELEGRAM_API_TOKEN: ${{secrets.SECRET_TELEGRAM_API_TOKEN}}
         SECRET_TELEGRAM_CHAT_ID: ${{secrets.SECRET_TELEGRAM_CHAT_ID}}
