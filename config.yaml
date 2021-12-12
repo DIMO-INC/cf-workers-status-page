@@ -16,13 +16,26 @@ settings:
 
 monitors:
 
+  - id: dimo.zone
+    name: dimo.zone
+    description: DIMO Home Page.'
+    url: 'https://dimo.zone'
+    method: GET
+    expectStatus: 200 
+    
+  - id: app
+    name: DIMO App
+    description: DIMO Web Application.'
+    url: 'https://app.dimo.zone'
+    method: GET
+    expectStatus: 200 
+
   - id: users-api
     name: Users API
     description: API for user profiles and information.'
     url: 'https://users-api.dev.dimo.zone'
     method: GET
-    expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
+    expectStatus: 200 
 
   - id: dex
     name: Authentication API
