@@ -17,14 +17,14 @@ settings:
 monitors:
 
   - id: dimo.zone
-    name: dimo.zone
+    name: Home Page
     description: DIMO Home Page.'
     url: 'https://dimo.zone'
     method: GET
     expectStatus: 200 
     
   - id: app
-    name: DIMO App
+    name: App
     description: DIMO Web Application.'
     url: 'https://app.dimo.zone'
     method: GET
