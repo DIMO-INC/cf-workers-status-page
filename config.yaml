@@ -1,7 +1,7 @@
 settings:
   title: DIMO Status Page
   url: 'https://status.dimo.zone'
-  logo: logo-192x192.png
+  logo: logo.png
   daysInHistogram: 90
   collectResponseTimes: true
   allmonitorsOperational: All Systems Operational
