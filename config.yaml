@@ -1,73 +1,63 @@
 settings:
-  title: 'DIMO Status Page'
-  url: 'https://status.dimo.zone' # used for Slack messages
-  logo: logo-192x192.png # image in ./public/ folder
-  daysInHistogram: 90 # number of days you want to display in histogram
-  collectResponseTimes: true # collects avg response times from CRON locations
-
-  allmonitorsOperational: 'All Systems Operational'
-  notAllmonitorsOperational: 'Not All Systems Operational'
-  monitorLabelOperational: 'Operational'
-  monitorLabelNotOperational: 'Not Operational'
-  monitorLabelNoData: 'No data'
-  dayInHistogramNoData: 'No data'
-  dayInHistogramOperational: 'All good'
-  dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
-
+  title: DIMO Status Page
+  url: 'https://status.dimo.zone'
+  logo: logo-192x192.png
+  daysInHistogram: 90
+  collectResponseTimes: true
+  allmonitorsOperational: All Systems Operational
+  notAllmonitorsOperational: Not All Systems Operational
+  monitorLabelOperational: Operational
+  monitorLabelNotOperational: Not Operational
+  monitorLabelNoData: No data
+  dayInHistogramNoData: No data
+  dayInHistogramOperational: All good
+  dayInHistogramNotOperational: ' incident(s)'
 monitors:
-
   - id: dimo.zone
     name: Home Page
     description: DIMO Home Page.'
     url: 'https://dimo.zone'
     method: GET
-    expectStatus: 200 
-    
+    expectStatus: 200
   - id: app
     name: App
     description: DIMO Web Application.'
     url: 'https://app.dimo.zone'
     method: GET
-    expectStatus: 200 
-    
+    expectStatus: 200
   - id: devices
     name: Device Services
-    description: 'API for managing and adding devices.'
+    description: API for managing and adding devices.
     url: 'https://devices-api.dev.dimo.zone/'
     method: GET
     expectStatus: 200
-
   - id: users-api
     name: User Services
     description: API for user profiles and information.'
     url: 'https://users-api.dev.dimo.zone'
     method: GET
-    expectStatus: 200 
-
+    expectStatus: 200
   - id: dex
     name: Authentication Services
-    description: 'API for authentication to DIMO platform.'
+    description: API for authentication to DIMO platform.
     url: 'http://auth.dev.dimo.zone/.well-known/openid-configuration/'
     method: GET
     expectStatus: 200
-    
   - id: smartcar
     name: SmartCar Services
-    description: 'SmartCar API.'
+    description: SmartCar API.
     url: 'http://auth.dev.dimo.zone/.well-known/openid-configuration/'
     method: GET
     expectStatus: 200
-    
   - id: autopi
     name: AutoPi Services
-    description: 'AutoPI API.'
+    description: AutoPI API.
     url: 'https://api.smartcar.com/v2.0/vehicles/'
     method: GET
     expectStatus: 401
-    
-   - id: nhtsa
+  - id: nhtsa
     name: NHTSA VIN Services
-    description: 'NHTSA API for vin decoding.'
+    description: NHTSA API for vin decoding.
     url: 'https://vpic.nhtsa.dot.gov/api/vehicles/getallmakes?format=json'
     method: GET
     expectStatus: 200
