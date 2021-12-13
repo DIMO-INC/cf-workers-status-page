@@ -1,5 +1,5 @@
 settings:
-  title: \[DIMO\] Status
+  title: "[DIMO] Status"
   url: 'https://status.dimo.zone'
   logo: logo.png
   daysInHistogram: 90
