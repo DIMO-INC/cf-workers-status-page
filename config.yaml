@@ -40,7 +40,7 @@ monitors:
   - id: dex
     name: Authentication Services
     description: API for authentication to DIMO platform.
-    url: 'http://auth.dev.dimo.zone/.well-known/openid-configuration/'
+    url: 'http://auth.dev.dimo.zone/.well-known/openid-configuration'
     method: GET
     expectStatus: 200
   - id: smartcar
