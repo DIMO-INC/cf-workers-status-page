@@ -50,13 +50,20 @@ monitors:
     url: 'http://auth.dev.dimo.zone/.well-known/openid-configuration/'
     method: GET
     expectStatus: 200
-
+    
+  - id: smartcar
+    name: SmartCar Services
+    description: 'SmartCar API.'
+    url: 'http://auth.dev.dimo.zone/.well-known/openid-configuration/'
+    method: GET
+    expectStatus: 200
+    
   - id: autopi
     name: AutoPi Services
     description: 'AutoPI API.'
-    url: 'https://api.dimo.autopi.io/status/'
+    url: 'https://api.smartcar.com/v2.0/vehicles/'
     method: GET
-    expectStatus: 200
+    expectStatus: 401
     
    - id: nhtsa
     name: NHTSA VIN Services
