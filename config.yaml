@@ -37,12 +37,6 @@ monitors:
     url: 'https://users-api.dimo.zone'
     method: GET
     expectStatus: 200
-  - id: dex
-    name: Authentication Services
-    description: API for authentication to DIMO platform.
-    url: 'http://auth.dimo.zone/.well-known/openid-configuration'
-    method: GET
-    expectStatus: 200
   - id: smartcar
     name: SmartCar Services
     description: SmartCar API.
