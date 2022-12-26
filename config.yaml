@@ -19,12 +19,6 @@ monitors:
     url: 'https://dimo.zone'
     method: GET
     expectStatus: 200
-  - id: app
-    name: App
-    description: DIMO Web Application.'
-    url: 'https://app.dimo.zone'
-    method: GET
-    expectStatus: 200
   - id: devices
     name: Device Services
     description: API for managing and adding devices.
