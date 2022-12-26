@@ -1,6 +1,6 @@
 settings:
   title: "[DIMO] Status"
-  url: 'https://status.dimo.zone'
+  url: "https://status.dimo.zone"
   logo: logo.png
   daysInHistogram: 90
   collectResponseTimes: true
