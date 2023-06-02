@@ -43,9 +43,3 @@ monitors:
     url: 'https://api.dimo.autopi.io/status/'
     method: GET
     expectStatus: 200
-  - id: nhtsa
-    name: NHTSA VIN Services
-    description: NHTSA API for vin decoding.
-    url: 'https://vpic.nhtsa.dot.gov/api/vehicles/getallmakes?format=json'
-    method: GET
-    expectStatus: 200
