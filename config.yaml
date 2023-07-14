@@ -43,3 +43,9 @@ monitors:
     url: 'https://api.dimo.autopi.io/status/'
     method: GET
     expectStatus: 200
+  - id: Store
+    name: DIMO Store
+    description: DIMO Store.
+    url: 'https://shop.dimo.zone'
+    method: GET
+    expectStatus: 200
